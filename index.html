@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+    <title>سنگ ، کاغذ ، قیچی</title>
+</head>
+
+<body>
+    <section class="main">
+        <div id="Message">سلام رفیق! یکی رو انتخاب کن :</div>
+        <div class="new-game">
+            <p id="new-game" onclick="window.location.reload()">بازی جدید</p>
+        </div>
+        <div class="score">
+            <div id="n01">رایانه : <span id="li01">0</span></div>
+            <div id="n02">شما : <span id="li02">0</span></div>
+        </div>
+        <section class="btn-computer">
+            <div class="btest">
+                <div class="computer" id="rock-computer">
+                    <button type="button" id="btn-com"><i class="far fa-hand-rock"></i></button>
+                    <p class="rock-com">سنگ</p>
+                </div>
+                <div class="computer" id="paper-computer">
+                    <button type="button" id="btn-com"><i class="far fa-hand-paper"></i></button>
+                    <p class="paper-com">کاغذ</p>
+                </div>
+                <div class="computer" id="scissor-computer">
+                    <button type="button" id="btn-com"><i class="far fa-hand-scissors"></i></button>
+                    <p class="scissor-com">قیچی</p>
+                </div>
+        </section>
+        <section class="btns-player">
+            <div class="player rock">
+                <button type="button" id="rock" onclick="test('سنگ')"><i class="far fa-hand-rock"></i></button>
+                <p class="rock">سنگ</p>
+            </div>
+            <div class="player paper">
+                <button type="button" id="paper" onclick="test('کاغذ')"><i class="far fa-hand-paper"></i></button>
+                <p class="paper">کاغذ</p>
+            </div>
+            <div class="player scissor">
+                <button type="button" id="scissor" onclick="test('قیچی')"><i class="far fa-hand-scissors"></i></button>
+                <p class="scissor">قیچی</p>
+            </div>
+        </section>
+    </section>
+</body>
+<script src="javascript/script.js"></script>
+
+</html>
