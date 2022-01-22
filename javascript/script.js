@@ -1,6 +1,9 @@
 var rock = document.getElementById('rock-computer');
 var paper = document.getElementById('paper-computer');
 var scissor = document.getElementById('scissor-computer');
+var rock_p = document.getElementById('rock-player-sh');
+var paper_p = document.getElementById('paper-player-sh');
+var scissor_p = document.getElementById('scissor-player-sh');
 var score = [0, 0];
 var licom = document.getElementById("li01");
 var lipla = document.getElementById("li02");
@@ -36,48 +39,75 @@ function test(e) {
             rock.style.visibility = "visible";
             paper.style.visibility = "hidden";
             scissor.style.visibility = "hidden";
+            rock_p.style.visibility = "hidden";
+            paper_p.style.visibility = "visible";
+            scissor_p.style.visibility = "hidden";
         } else if (computer === 0 && player === "قیچی") {
             score[0]++;
             licom.innerHTML = score[0];
             rock.style.visibility = "visible";
             paper.style.visibility = "hidden";
             scissor.style.visibility = "hidden";
+            rock_p.style.visibility = "hidden";
+            paper_p.style.visibility = "hidden";
+            scissor_p.style.visibility = "visible";
         } else if (computer === 1 && player === "سنگ") {
             score[0]++;
             licom.innerHTML = score[0];
             rock.style.visibility = "hidden";
             paper.style.visibility = "visible";
             scissor.style.visibility = "hidden";
+            rock_p.style.visibility = "visible";
+            paper_p.style.visibility = "hidden";
+            scissor_p.style.visibility = "hidden";
         } else if (computer === 1 && player === "قیچی") {
             score[1]++;
             lipla.innerHTML = score[1];
             rock.style.visibility = "hidden";
             paper.style.visibility = "visible";
             scissor.style.visibility = "hidden";
+            rock_p.style.visibility = "hidden";
+            paper_p.style.visibility = "hidden";
+            scissor_p.style.visibility = "visible";
         } else if (computer === 2 && player === "سنگ") {
             score[1]++;
             lipla.innerHTML = score[1];
             rock.style.visibility = "hidden";
             paper.style.visibility = "hidden";
             scissor.style.visibility = "visible";
+            rock_p.style.visibility = "visible";
+            paper_p.style.visibility = "hidden";
+            scissor_p.style.visibility = "hidden";
         } else if (computer === 2 && player === "کاغذ") {
             score[0]++;
             licom.innerHTML = score[0];
             rock.style.visibility = "hidden";
             paper.style.visibility = "hidden";
             scissor.style.visibility = "visible";
+            rock_p.style.visibility = "hidden";
+            paper_p.style.visibility = "visible";
+            scissor_p.style.visibility = "hidden";
         } else if (computer === 0 && player === "سنگ") {
             rock.style.visibility = "visible";
             paper.style.visibility = "hidden";
             scissor.style.visibility = "hidden";
+            rock_p.style.visibility = "visible";
+            paper_p.style.visibility = "hidden";
+            scissor_p.style.visibility = "hidden";
         } else if (computer === 1 && player === "کاغذ") {
             rock.style.visibility = "hidden";
             paper.style.visibility = "visible";
             scissor.style.visibility = "hidden";
+            rock_p.style.visibility = "hidden";
+            paper_p.style.visibility = "visible";
+            scissor_p.style.visibility = "hidden";
         } else if (computer === 2 && player === "قیچی") {
             rock.style.visibility = "hidden";
             paper.style.visibility = "hidden";
             scissor.style.visibility = "visible";
+            rock_p.style.visibility = "hidden";
+            paper_p.style.visibility = "hidden";
+            scissor_p.style.visibility = "visible";
         }
     } else {
         alert("لطفا روی (بازی جدید) کلیک کنید.");

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
     <title>سنگ ، کاغذ ، قیچی</title>
 </head>
 
@@ -20,33 +20,66 @@
             <div id="n01">رایانه : <span id="li01">0</span></div>
             <div id="n02">شما : <span id="li02">0</span></div>
         </div>
-        <section class="btn-computer">
-            <div class="btest">
-                <div class="computer" id="rock-computer">
-                    <button type="button" id="btn-com"><i class="far fa-hand-rock"></i></button>
-                    <p class="rock-com">سنگ</p>
+        <section class="container-ch">
+            <section class="btn-computer">
+                <p>انتخاب رایانه:</p>
+                <div class="btest">
+                    <div class="computer" id="rock-computer">
+                        <button type="button">
+                            <i class="far fa-hand-rock"></i>
+                            <!-- <p class="rock-com">سنگ</p> -->
+                        </button>
+                    </div>
+                    <div class="computer" id="paper-computer">
+                        <button type="button">
+                            <i class="far fa-hand-paper"></i>
+                            <!-- <p class="paper-com">کاغذ</p> -->
+                        </button>
+                    </div>
+                    <div class="computer" id="scissor-computer">
+                        <button type="button">
+                            <i class="far fa-hand-scissors"></i>
+                            <!-- <p class="scissor-com">قیچی</p> -->
+                        </button>
+                    </div>
                 </div>
-                <div class="computer" id="paper-computer">
-                    <button type="button" id="btn-com"><i class="far fa-hand-paper"></i></button>
-                    <p class="paper-com">کاغذ</p>
+            </section>
+            <div class="btn-computer">
+                <p>انتخاب شما:</p>
+                <div class="btest">
+                    <div class="computer scalex-1" id="rock-player-sh">
+                        <button type="button"><i class="far fa-hand-rock"></i></button>
+                        <!-- <p class="rock-com">سنگ</p> -->
+                    </div>
+                    <div class="computer scalex-1" id="paper-player-sh">
+                        <button type="button"><i class="far fa-hand-paper"></i></button>
+                        <!-- <p class="paper-com">کاغذ</p> -->
+                    </div>
+                    <div class="computer scalex-1" id="scissor-player-sh">
+                        <button type="button"><i class="far fa-hand-scissors"></i></button>
+                        <!-- <p class="scissor-com">قیچی</p> -->
+                    </div>
                 </div>
-                <div class="computer" id="scissor-computer">
-                    <button type="button" id="btn-com"><i class="far fa-hand-scissors"></i></button>
-                    <p class="scissor-com">قیچی</p>
-                </div>
+            </div>
         </section>
         <section class="btns-player">
             <div class="player rock">
-                <button type="button" id="rock" onclick="test('سنگ')"><i class="far fa-hand-rock"></i></button>
-                <p class="rock">سنگ</p>
+                <button type="button" id="rock" onclick="test('سنگ')">
+                    <i class="far fa-hand-rock"></i>
+                    <p class="rock">سنگ</p>
+                </button>
             </div>
             <div class="player paper">
-                <button type="button" id="paper" onclick="test('کاغذ')"><i class="far fa-hand-paper"></i></button>
-                <p class="paper">کاغذ</p>
+                <button type="button" id="paper" onclick="test('کاغذ')">
+                    <i class="far fa-hand-paper"></i>
+                    <p class="paper">کاغذ</p>
+                </button>
             </div>
             <div class="player scissor">
-                <button type="button" id="scissor" onclick="test('قیچی')"><i class="far fa-hand-scissors"></i></button>
-                <p class="scissor">قیچی</p>
+                <button type="button" id="scissor" onclick="test('قیچی')">
+                    <i class="far fa-hand-scissors"></i>
+                    <p class="scissor">قیچی</p>
+                </button>
             </div>
         </section>
     </section>
